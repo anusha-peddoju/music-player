@@ -1,0 +1,470 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;1,300;1,500&family=Ubuntu:ital,wght@1,300;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;1,300;1,500&family=Ubuntu:ital,wght@1,300;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;1,300;1,500&family=Ubuntu:ital,wght@1,300;1,700&display=swap');
+body{
+    background-color:rgb(252, 67, 88);
+
+}
+
+*{
+margin:0;
+padding: 0;
+
+}
+
+.navbar{
+   
+    font-family: 'Poppins', sans-serif;
+
+}
+.navbar ul{
+
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 65px;
+    background-color: rgb(83, 83, 90);
+    color: white;
+}
+.brand
+{
+font-family:"Sofia", sans-serif;
+display: flex;
+align-items: center;
+font-weight: bolder;
+}
+
+.brand img
+{
+    border-radius: 50%;
+}
+
+.navbar ul li{
+    text-align: right;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+
+.navbar ul li a{
+    color: white;
+}
+
+.navbar ul li a:hover{
+    background-color: #ddd;
+    color: black;
+}
+
+
+.a{
+    font-family: 'poppins', sans-serif;
+    padding-left: 20px;
+}
+
+.a h3{
+
+    font-family:'sofia', sans-serif;;
+}
+
+.songlist
+{
+   
+    background-image: url("spotify/c.jpg");
+    min-height: 60vh;
+    padding: 20px;
+    border-radius: 10px;
+    width: 70%;
+    background-size:contain;
+    margin: 20px auto;
+   color: white;
+  
+  
+ 
+
+}
+.song
+{
+    display: flex;
+    border: 1px solid black;
+    font-family: "Sofia", sans-serif;
+    background-color:whitesmoke;
+    width:40%;
+    color: black;
+    padding: 5px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 30pc ;
+    
+}
+
+.time
+{
+    font-size:13px;
+}
+
+.bottom
+{
+    background-color:rgb(83, 83, 90);
+    text-align: center;
+    justify-content: center;
+    position: sticky;
+    height: 80px;
+    margin: 5px;
+    border-radius: 10px;
+}
+#progressbar
+{
+    width: 80vw;
+   
+}
+
+.icon
+{
+    padding-top: 10px;
+    color:rgb(234, 230, 230);
+    cursor: pointer;
+}
+.icon i{
+    margin-left: 10px;
+}
+
+.songinfo
+{
+    color:white;
+    font-family: "Sofia", sans-serif;
+    left: 10vw;
+    position: absolute;
+}
+.songplay
+{
+    cursor:pointer;
+}
+
+.songinfo img{
+    opacity:0;
+    transition: opacity 1s ease-in;
+}
+
+
+.about .about2
+{
+    background-color:aliceblue;
+    padding: 40px;
+    border: 2px solid red;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-left: 30pt;
+    margin-right: 30pt;
+    margin-bottom: 30px;
+    text-align: center;
+    color:black;
+    font-family:  "Trirong", sans-serif;
+}
+
+.about .about1
+{
+    border: 2px solid red;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-left: 30pc;
+    margin-right: 30pc;
+    padding: 10px;
+    text-align: center;
+    background-color:aliceblue;
+}
+
+footer{
+
+    text-align: center;
+    color: white;
+}
+
+
+
+
+/*making website responsive*/
+@media screen and (max-width: 1180px)
+{
+    .song
+    {
+       
+        width:30%;
+        margin-left:25pc;
+        margin-bottom: 20px;
+    }
+
+}
+
+@media screen and (max-width: 1086px)
+{
+    .song
+    {
+       
+        width:30%;
+        font-size:small;
+        margin-left:25pc;
+        margin-bottom: 20px;
+    }
+    .time
+    {
+        font-size:small;
+    }
+
+    .about .about1
+    {
+    border: 2px solid red;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-left: 20pc;
+    margin-right: 20pc;
+    padding: 10px;
+    text-align: center;
+    background-color:aliceblue;
+    }
+}
+
+@media screen and (max-width: 960px)
+{
+    .song
+    {
+       
+        width:30%;
+        font-size:small;
+        margin-left:20pc;
+        margin-bottom: 20px;
+    }
+    .time
+    {
+        font-size:small;
+    }
+
+}
+
+@media screen and (max-width: 860px)
+{
+    .song
+    {
+       
+        width:30%;
+        font-size:10px;
+        margin-left:20pc;
+        margin-bottom: 20px;
+    }
+    .time
+    {
+        font-size:10px;
+    }
+    .about .about1
+    {
+    border: 2px solid red;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-left: 15pc;
+    margin-right: 15pc;
+    padding: 10px;
+    text-align: center;
+    background-color:aliceblue;
+    }
+
+}
+
+@media screen and (max-width: 680px)
+{
+    .song
+    {
+       
+        width:40%;
+        font-size:10px;
+        margin-left:15pc;
+        margin-bottom: 20px;
+    }
+    .time
+    {
+        font-size:10px;
+    }
+    .about .about1
+    {
+    border: 2px solid red;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-left: 10pc;
+    margin-right: 10pc;
+    padding: 10px;
+    text-align: center;
+    background-color:aliceblue;
+    }
+}
+
+@media screen and (max-width: 590px)
+{
+    .song
+    {
+       
+        width:40%;
+        font-size:8px;
+        margin-left:10pc;
+        margin-bottom: 20px;
+    }
+    .time
+    {
+        font-size:8px;
+    }
+
+}
+
+@media screen and (max-width: 440px)
+{
+    .song
+    {
+       
+        width:45%;
+        font-size:8px;
+        color:whitesmoke;
+        margin-left:8pc;
+        margin-bottom: 12px;
+    }
+   .song .img
+   {
+    height: 20px;
+    width:20px;
+   }
+
+   .song .songplay{
+    color: black;
+    font-size:15px;
+   }
+
+}
+
+@media screen and (max-width: 470px)
+{
+    .songlist
+    {
+       
+        background-image: url("spotify/g.jpg");
+        min-height: 60vh;
+        padding: 20px;
+        border-radius: 10px;
+        width: 70%;
+        background-size:contain;
+        margin: 20px auto;
+       color: white;
+       
+    
+    }
+    .song{
+        font-size: 1px;
+        color:whitesmoke;
+        width: 50%;
+        border-radius: 30px;
+        margin-left:3pc;
+        margin-bottom:20px;
+        margin-right: 5pc;
+        
+    }
+    .song .songplay
+    {
+        color:black;
+        font-size:medium;
+        margin-right: 15px;
+    }
+    .song .img{
+      height: 20px;
+      width: 20px;
+    }
+    .about .about1
+    {
+    border: 2px solid red;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-left: 3pc;
+    margin-right: 3pc;
+    padding: 10px;
+    text-align: center;
+    background-color:aliceblue;
+    }
+    
+    .about h4
+    {
+        font-size: 6px;
+    }
+    footer
+    {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 200px)
+{
+    .about .about2
+    {
+    background-color:aliceblue;
+    margin-left: 0%;
+    margin-right: 0%;
+    }
+    .about .about1
+    {
+        font-size: 10px;
+    }
+    .song
+    {
+        width: 45%;
+    }
+    .song .songplay
+    {
+        margin-right: 5px;
+    }
+}
+
+
+/*menubar styling*/
+
+.navbar .icon1 {
+    display: none;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .navbar ul li a:not(:first-child) {display: none;}
+    .navbar ul li a.icon1 {
+     
+      display: flex;
+    }
+  }
+  
+  @media screen and (max-width: 600px) 
+  {
+    .navbar.responsive ul{
+        background-color: black;
+    }
+    .navbar.responsive ul li 
+    {
+    position: relative;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    }
+    .navbar.responsive ul li a .icon1 {
+      position: absolute;
+      right: 0px;
+      top: 0;
+     cursor:pointer; 
+    }
+        
+      
+
+
+    }
+    
+    .sticky {
+        position: sticky;
+        top: 0;
+        width: 100%;
+      }
+
+      .sticky + .content
+      {
+        padding-top:60px;
+
+      }
